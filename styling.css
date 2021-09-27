@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --blue:#03045e;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--blue);
+    color:#fff;
+}
+
+::-webkit-input-placeholder { 
+    color: #fff;
+  }
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;  /*overflowed content will bw hidden */
+}
+
+html ::-webkit-scrollbar {
+    width: 1rem;
+}
+
+
+html ::-webkit-scrollbar-track {
+    background: var(--blue);
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: #48cae4; 
+}
+
+body{
+    background:#90e0ef;
+    overflow-x :hidden;
+    padding-left: 35rem;
+}
+
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.btn{
+    padding:.7rem 3rem;
+    background: linear-gradient(to left ,  #03045e 40%, #0077b6 100%);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font: size 1.5rem;
+    border-radius:5rem;
+}
+
+.btn i {
+    padding: 0 .5rem;
+    font-size:1.8rem ;
+}
+
+.btn:hover {
+    background:linear-gradient(to right ,  #03045e 40%, #0077b6 100%) ;
+}
+
+.heading{
+    text-align:center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #0077b6 ;
+    color: #fff;
+}
+
+.heading span {
+    color:#03045e;
+
+
+}
+
+
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index : 1000;
+    height:100%;width:35rem;
+    background:#48cae4;
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column;
+    text-align: center; 
+
+}
+
+header .user img{
+    height:13rem;
+    width:13rem;
+    margin-bottom: 1rem;  
+    
+}
+
+header .user .name {
+    font-size: 3.5rem;
+    font-weight: 2rem;
+    color: #03045e;
+     
+}
+
+header .user .post {
+    font-size: 3rem;
+    font-weight: 5rem;
+    color:#03045e;  
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+header .navbar ul li a{
+    display : block;
+    padding : 1rem ;
+    margin:1.5rem 0;
+    background:  linear-gradient(to left ,  #03045e 40%, #0077b6 100%);
+    color: #fff;
+    font-size:1.5rem;
+    border-radius:5rem;
+    font-weight:2rem;
+}
+
+header .navbar ul li a:hover{
+     background: linear-gradient(to right , #03045e 40%, #0077b6 100%);
+
+}
+
+
+#menu{
+    position: fixed;
+    top:2rem; right:2rem; 
+    background: #03045e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    z-index:1000;
+    display:block; 
+}
+
+.home{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding :0 15rem;
+}
+
+.home h3{
+    font-size:2.5rem;
+    color:#03045e;
+}
+
+.home h1{
+    font-size:5rem;
+    color:#03045e;
+}
+
+.home p{
+    font-size:2rem;
+    color:#03045e;
+    padding:1rem 0;
+}
+
+.about .row{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-wrap: wrap;     
+   padding: 1rem 0 ;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left:6rem;
+
+}
+
+.about .row .info h3{
+    font-size:2rem;
+    color:#03045e;
+    padding:.5rem 0;
+    /* font-weight: 2px; */
+}
+
+.about .row .info h3 span{
+    color:#fff;
+    padding: 0 .5rem;
+    font-weight:bold;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    width:20rem;
+    background:#48cae4;
+    text-align:center;
+    padding:2rem;
+    margin:2rem;
+    font-weight: 2px;
+}
+
+.about .row .counter .box span{
+    font-size:4rem;
+    color:#03045e;
+}
+
+.about .row .counter .box h3{
+    font-size:2rem;
+    color:#fff;
+}
+
+ .education .box-container{
+     display:flex;
+     align-items:center;
+     justify-content:space-between;
+     flex-wrap: wrap;
+     padding:2.5rem 0;
+     padding-left: 5rem;
+ }
+
+ .education .box-container .box{
+    width:35rem;
+    margin:4rem 1rem ;
+    padding-left:  4rem;
+    border-left: .2rem solid #03045e;
+    position:relative;
+}
+
+ .education .box-container .box span{
+   font-size:1.3rem;
+   background:#48cae4;
+   color:#03045e;
+   border-radius:5rem;
+   padding: .5rem 2.5rem;
+}
+
+.education .box-container .box  h3{
+    font-size:2rem;
+    color:#03045e;
+    padding-top:1.5rem;
+}
+
+.education .box-container .box  p{
+    font-size:1.4rem;
+    color:#03045e;
+    padding:1rem 0;
+}
+
+.education .box-container .box  i{
+  position:absolute;
+  top:-1.5rem;left:-2.5rem;
+  height:5rem;
+  width:5rem;
+  border-radius: 50%;
+  line-height:5rem;
+  text-align:center;
+  font-size:2rem;
+  color:#03045e;
+  background:#48cae4;
+}
+
+
+  .skills .container {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 5rem ;
+    padding:1rem 0;
+  }
+
+
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+ .skills .box-container {
+     margin-top:5rem;
+     margin-left:6rem;
+     margin-right: 6rem;
+ }
+  
+ .skills .box-container h3 {
+    font-size:2.5rem;
+}
+
+.skills .box-container .bar:hover {
+   transform: scale(1.1);
+}
+
+  .bar{
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 15px;
+    margin-top: .7rem;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #48cae4;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #03045e;
+  }
+  .bar.back::before{
+    background-color: #0077b6;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
+ .contact .row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+ }
+
+ .contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom:0;
+ }
+
+ .contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom:4rem;
+ }
+
+  
+ .contact .row form .box{
+   padding:1.5rem;
+   margin:1rem 0;
+   background:#03045e;
+   color:#fff;
+   font-size:1.7rem;
+   width:100%; 
+ }
+
+ .contact .row form .message{
+     height:15rem;  
+ }
+
+ .contact .row .content .title{
+    text-transform: uppercase;
+    color:#03045e;
+    font-size: 3rem;
+    padding-bottom:2rem;
+
+ }
+
+ .contact .row .content .info h3{
+    display:flex;
+    align-items:center;
+    font-size:2rem;
+    color:#03045e;    
+    font-weight:normal;
+    padding:.5rem;
+}
+
+
+
+
+
+/* media queries */
+@media(max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media(max-width:990px){
+    
+   header{
+       left:-120%; 
+   }
+    
+    #menu{
+       display: block;
+   }
+  
+   header.toggle{
+       left:0%;
+   }
+   body{
+       padding: 0;
+   }
+}
+
+@media(max-width:768px){
+    
+    html{
+        font-size:50%;
+    }  
+    
+    .about .row .counter .box{
+        width: 100%;
+    }
+    
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .skills .box-container .bar{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:400px){
+    
+    header{
+            width: 100vw; 
+    }
+    html{
+        font-size:80%;
+    } 
+
+    .heading{
+        margin:0 3rem;
+    }
+    
+    .about .row .counter .box{
+        width: 100%;
+    }
+    
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .skills .box-container .bar{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

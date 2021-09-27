@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Portfolio</title>
+     <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css file      -->
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <!-- header section -->
+    <header> 
+        <div class = "user">
+           <img src = "user.png"  alt="photo">
+           <h3 class = "name">Vasu Tevar</h3>
+           <p class="post">Web Designer</p>
+        </div>  
+
+        <nav class = "navbar">
+            <ul>
+                 <li ><a href = "#home">Home</a></li>
+                 <li ><a href = "#about" >About Me </a></li>
+                 <li ><a href = "#education" >Education</a></li>
+                 <li ><a href = "#skills" >Skills</a></li>
+                 <li><a href = "#contact" >Contact</a></li>
+             </ul>
+        </nav>
+    </header> 
+
+    <div id="menu" class="fas fa-bars"></div>  
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section id="home" class="home">
+
+        <h3>Hello!</h3>
+        <h1>I'M<span> Vasu Tevar</span></h1>
+        <p>I am currently persuing my career in Computer Engineering from  M.S University.<br>My goal is to become a successful 
+           Front End Developer .<br> My hobbies are playing PC-games,football and swimming.
+        </p>
+        <a href="#about"><button class="btn">About Me<i class="fa fa-user"></i></button></a>
+    </section>
+   <!-- home section ends -->
+
+  <!-- About section starts -->
+  <section class="about" id="about">
+
+  <h1 class="heading"><span>About </span> Me</h1>
+
+ <div class="row">
+
+   <div class="info">
+       <h3><span>Name : </span> Vasu Tevar</h3>
+       <h3><span>Age : </span> 18</h3>
+       <h3><span>Qualification : </span>Diploma in Computer Engineering(2022)</h3>
+       <h3><span> Goal: </span>Front-end Developer</h3>
+       <h3><span>Language: </span> Hindi,English And Gujarati</h3>
+       <a href = "#"><button class="btn"> Download CV <i class="fa fa-download"></i></button></a>
+    </div>
+
+    <div class="counter">
+       <div class="box">
+           <!-- Attach afterwards -->
+           <span>6+</span>
+           <h3>months of experirence</h3>
+       </div>
+       
+       <div class="box">
+        <span>4+</span>
+        <h3>project completed</h3>
+       </div>
+       
+       <div class="box">
+        <span>6+</span>
+        <h3>certificates achieved</h3>
+    </div>
+    </div>
+ </div>
+ </section>
+ <!-- About section ends -->
+
+ <!--Education section starts -->
+ <section class="education" id="education">
+ <h1 class="heading">My <span>Education </span></h1>
+ 
+ <div class="box-container">
+ 
+    <div class="box">
+       <i class="fa fa-graduation-cap"></i>
+       <span>2019</span>
+       <h3>10<sup>th</sup>(H.S.C.)</h3>
+       <p>I passed the <b>10<sup>th </sup>standard</b> with a execellent result of <b>84%</b> from Rosary High School ,Vadodara.</p>
+    </div>
+    
+    <div class="box">
+        <i class="fa fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Diploma in Computer Engineering</h3>
+        <p>I will achieve the Degree completion certificate in <b>Diploma in Computer Engineering</b> from M.S University</p>
+     </div>
+ </div>
+ </section>
+ <!-- Education section ends-->
+ 
+ <!--Skills section starts -->
+ <section class="skills" id="skills">
+ <h1 class="heading">My <span>Skills</span></h1>
+ 
+ <div class="box-container">
+     <h3>According to my learning experience and Projects :</h3>
+    <div class="bar basic" data-skill="Javascript"></div>
+    <div class="bar back intermediate" data-skill="Java"></div>
+    <div class="bar back intermediate" data-skill="Python"></div>
+    <div class="bar front advanced" data-skill="CSS3"></div>
+    <div class="bar front expert" data-skill="HTML5"></div>
+
+    </div>
+   </div>
+  </div>
+</section>
+ <!--Skills section ends -->
+
+ <!-- Contact Section starts -->
+ <section class="contact" id="contact">
+
+ 
+ 
+ <h1 class="heading"><span>Contact</span> Me</h1>
+ <div class="row">
+
+    <div class="content">   
+    
+        <h3 class="title">Contact Info :</h3>
+
+        <div class="info">
+            <h3><i class="fa fa-envelope"></i>-tevarvasu@gmail.com</h3>
+            <h3><i class="fa fa-phone"></i> +91-8156089970.</h3>
+            <h3><i class="fa fa-map-marker"></i> -Vadodara,Gujarat,India</h3>      
+        </div>
+    </div>
+    
+    <form action = "">
+        <input type="text" placeholder= "Name" class="box">
+        <input type="Email" placeholder= "Email" class="box">
+        <input type="project/work" placeholder= "Project/Work" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message " ></textarea>
+        <button type="submit" class="btn"><a href = "mailto:tevarvasu@gmail.com" target="_blank"></a> Send <i class="fas fa-paper-plane"></i></button>
+        
+    </form>   
+  </div>
+ </section>
+
+ <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src = "script.js"></script>
+
+
+
+</body>
+</html>
